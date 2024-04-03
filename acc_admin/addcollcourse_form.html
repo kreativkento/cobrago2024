@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Course</title>
+    <style>
+        body {
+            background-image: url("logoutbg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .form-container {
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+
+        
+        .form-container table {
+            margin: 0 auto;
+        }
+
+        
+        .form-container label {
+            width: 120px;
+            display: inline-block;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 80px; 
+        }
+
+        .redirect-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .redirect-button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body bgcolor="white">
+    <div class="container">
+        <div class="form-container">
+            <h1>
+                <a href="/schooldocumentsprocessing/college_course.php">
+                </a> &nbsp;&nbsp;&nbsp; Add Course Information
+            </h1><br>
+            <form method="post" action="addcollcourse_process.php">
+                <table style="width: 100%;">
+                    <tr>
+                        <td><label for="txtstudentid"> Department ID </label></td>
+                        <td><input type="text" name="txtstudentid" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtcoursetitle"> Description </label></td>
+                        <td><input type="text" name="txtcoursetitle" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="txtdeptcode"> Department Code </label></td>
+                        <td><input type="text" name="txtdeptcode" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="SAVE" name="submit">
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="reset" value="CLEAR">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

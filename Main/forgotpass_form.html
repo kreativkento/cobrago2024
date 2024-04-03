@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGOT PASSWORD</title>
+    <style>
+      
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url("forgotpass.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            background-color: #800000;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 100px;
+            text-align: center; /* Center-align content within the container */
+        }
+
+        .logo {
+            width: 200px; /* Set the width of your logo */
+            height: auto;
+            margin: 0 auto 20px; /* Center the logo horizontally and add margin */
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="email"]:hover {
+            border-color: green;
+
+        }
+
+        .submit-btn {
+            background-color: #999999;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 30px;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #707070;
+        }
+
+        .exit-btn {
+            background-color: #7e7e7e;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .exit-btn:hover {
+            background-color: #CC0000;
+        }
+
+        .content {
+            background-image: url("forgotpass.jpg");
+            background-position: center;
+            height: 1000px;
+            margin-left: 220px;
+            margin-right: -40px;
+            margin-top: -28px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo1.png" alt="Logo" class="logo">
+        <h1>FORGOT PASSWORD</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="submit-btn">Reset Password</button>
+            <button class="exit-btn" onclick="goToLogin()">Back to Login</button>
+        </form>
+    </div>
+
+    <script>
+        function goToLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

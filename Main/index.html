@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .background-image {
+            background-image: url('./assets/background-image.jpg');
+            background-size: 1925px;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        body {
+            background: url('./assets/background-image.jpg') no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            background-color: transparent;
+            backdrop-filter: blur(30px);
+            border: 2px solid rgba(0, 0, 0, .2);
+            width: 600px;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            border-radius: 20px;
+            margin-right: 15%;
+        }
+
+        .container h1 {
+            margin: 30px 0;
+        }
+
+        .input {
+            width: 100%;
+        }
+
+        .input input {
+            padding: 1rem;
+            width: 100%;
+            margin: 5px;
+            border: 2px solid rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: transparent;
+            color: black;
+        }
+
+        .input input::placeholder {
+            color: black;
+        }
+
+        .login-btn {
+            padding: 1rem;
+            width: 50%;
+            border-radius: 30px;
+            border: 2px solid rgb(145, 145, 145);
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 30px;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            display: block;
+            margin: 30px auto;
+        }
+
+        .login-btn:hover {
+            background-color: #800000;
+            color: white;
+        }
+
+        .help {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #rmbr-me {
+            font-size: 15px;
+            margin-left: 10px;
+            color: black;
+        }
+
+        .help a {
+            font-size: 15px;
+            color: rgb(178, 0, 0);
+        }
+
+        .register {
+            color: black;
+            font-size: 22px;
+            margin: 20px 0;
+            text-decoration: underline;
+        }
+
+        .input select {
+            padding: 1rem;
+            width: 100%;
+            margin: 5px;
+            border: 2px solid rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: transparent;
+            color: black;
+        }
+
+        #login_role {
+            padding-left: 12px;
+
+            
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .card:hover {
+            background-color: #cccccccf;
+            color: white;
+        }
+        
+        .card a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .card img {
+            max-width: 100%;
+        }
+        
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .text-subhead {
+            font-size: 12px;
+            padding-top: 25px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>WELCOME</h1>
+    
+        <div class="card-container">
+            <div class="card">
+                <a href="./acc_guidance/guidance_login.html">
+                    <img src="./assets/icon_guidance.png" alt="Guidance Office">
+                    <p>Guidance Office</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./acc_dean/dean_login.html">
+                    <img src="./assets/icon_dean.png" alt="College Dean">
+                    <p>College Dean</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./acc_finance/finance_login.html">
+                    <img src="./assets/icon_finance.png" alt="Finance">
+                    <p>Finance</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./acc_studentlife/sl_login.html">
+                    <img src="./assets/icon_studentlife.png" alt="Student Life">
+                    <p>Student Life</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./acc_admin/admin_login.html">
+                    <img src="./assets/icon_admin.png" alt="Administrator">
+                    <p>Administrator</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="./aboutdev.html">
+                    <img src="./assets/icon_developers.png" alt="About CobraGO">
+                    <p>About CobraGO</p>
+                </a>
+            </div>
+        </div>
+        <p class="text-subhead">Please Select Card</p>
+    </div>
+</body>
+
+
+</html>

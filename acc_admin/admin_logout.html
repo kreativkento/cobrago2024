@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logout Confirmation</title>
+    <style>
+        body {
+            background-color: #800000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("logoutbg.jpg");
+            background-position: center;
+            height: 1000px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #8f8f8f;
+        }
+
+        .button {
+            background-color: #800000;
+            color: #E5DAC3;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button.cancel {
+            background-color: #5a5a5a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>LOGOUT CONFIRMATION</h2>
+        <p>Are you sure you want to logout?</p>
+        <button class="button cancel" onclick="cancelLogout()">Cancel</button>
+        <button class="button" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function cancelLogout() {
+            // Handle cancel action, if needed
+            alert('Logout canceled!');
+            window.location.href = "./admin_dashboard.php";
+        }
+
+        function logout() {
+            alert('Logout successful!');
+            // Redirect to the login page after successful logout
+            window.location.href = "./admin_login.html";
+        }
+    </script>
+
+</body>
+
+</html>

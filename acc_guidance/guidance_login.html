@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .background-image {
+            background-image: url('../assets/background-image.jpg');
+            background-size: 1925px;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        body {
+            background: url('../assets/background-image.jpg') no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            background-color: transparent;
+            backdrop-filter: blur(30px);
+            border: 2px solid rgba(0, 0, 0, .2);
+            width: 450px;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            border-radius: 20px;
+            margin-right: 15%; 
+        }
+
+        .container h1 {
+    margin: 30px 0;
+}
+
+.input {
+    width: 100%;
+}
+
+.input input {
+    padding: 1rem;
+    width: 100%;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+}
+
+.input input::placeholder {
+    color: black;
+}
+
+.login-btn {
+    padding: 1rem;
+    width: 50%;
+    border-radius: 30px;
+    border: 2px solid rgb(145, 145, 145);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    display: block; 
+    margin: 30px auto; 
+}
+
+.login-btn:hover {
+    background-color: #800000;
+    color: white;
+}
+
+.help {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#rmbr-me {
+    font-size: 15px;
+    margin-left: 10px;
+    color: black;
+}
+
+.help a {
+    font-size: 15px;
+    color: rgb(178, 0, 0);
+}
+
+.register {
+    color: black;
+    font-size: 22px;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+.input select {
+    padding: 1rem;
+    width: 100%;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+}
+
+#login_role {
+    padding-left: 12px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <div class="input">
+            <form method="post" action="./guidance_login_process.php">
+                <input name="account_id" type="text" placeholder="Account ID" required>
+                <input name="password" type="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+        <div class="help">
+            <div>
+                <input type="checkbox" id="remember-me">
+                <label id="rmbr-me" for="remember-me">Remember me</label>
+            </div>
+        </div>
+        <p id="error-message" style="color: red; display: none;">Incorrect username or password.</p>
+        <p id="success-message" style="color: green; display: none;">
+            Login successful! You will be redirected to your dashboard shortly.
+        </p>
+    </div>
+</body>
+
+</html>

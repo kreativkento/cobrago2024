@@ -1,0 +1,18 @@
+Login details
+login name:	swuinfotechcobra
+email:		piweg45229@hupoi.com
+password:	@CobraGO2023
+
+hosting acc
+ID:	swuinfotechcobra-001
+pass:	@CobraGO2023
+
+
+Database
+dbname:	db_aa2ba5_cobrago
+usernm:	aa2ba5_cobrago
+pass:	@CobraGO2023
+server:	mysql5049.site4now.net
+
+
+http://swuinfotechcobra-001-site1.atempurl.com/
